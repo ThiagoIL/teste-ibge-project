@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('street');
             $table->string('district');
             $table->integer('number');
+            $table->string('city_name');
             $table->integer('id_city');
             $table->timestamps();
         });

@@ -21,7 +21,7 @@ class CityController extends Controller
 
         return response()->json($this->reply(
             true,
-            'Cidades do RN',
+            'RN Cities',
             [
                 'cities' => $cities
             ]

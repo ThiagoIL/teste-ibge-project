@@ -15,11 +15,16 @@ use App\Http\Controllers\Api;
 */
 Route::group([
     'namespace'=>'App\Http\Controllers\Api',
-    'prefix' => '/region',
+    'prefix' => '/rn',
     
 ], function () {
 
-    Route::get('/', 'CityController@list' );
+    Route::get('/cities', 'CityController@list' );
+    Route::post('/adress/store', 'AdressController@store' );
+    Route::get('/adress/list', 'AdressController@list' );
+    Route::get('/adress/edit/{adress_id}', 'AdressController@edit' );
+    Route::post('/{adress_id}/adress/update', 'AdressController@update' );
+    Route::post('/{adress_id}/adress/destroy', 'AdressController@delete' );
 
     
 
