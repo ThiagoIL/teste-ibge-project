@@ -3,7 +3,7 @@
 
 composer install   
 
-php artisan migrate
+php artisan migrate // usar MYSQL -  Criar banco e referenciar no arquivo .env antes de rodar o comando
 
 php artisan import:cities  // comando ARTISAN para importar todas as cidades do RN no DB.
 
