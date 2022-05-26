@@ -1,8 +1,11 @@
+
+## Comandos que devem ser rodados antes de usar o programa
+
 composer install   
 
 php artisan migrate
 
-php artisan import:cities  // comando para importar todas as cidades do RN no DB.
+php artisan import:cities  // comando ARTISAN para importar todas as cidades do RN no DB.
 
 
 
